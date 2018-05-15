@@ -1,0 +1,118 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Edit model</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <i class="material-icons">close</i>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+
+            <md-content layout-padding>
+                <div>
+                    <form name="userForm">
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Name</label>
+                                <input ng-model="currentModel.name">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Parent</label>
+                                <md-select ng-model="currentModel.parent">
+                                    <md-option><em>None</em></md-option>
+                                    <md-option ng-repeat="model in models" ng-value="model">
+                                        {{model.name}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Prefab-Name</label>
+                                <input ng-model="currentModel.prefab.name">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Note-Name</label>
+                                <input ng-model="currentModel.note.name">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Note-Content</label>
+                                <input ng-model="currentModel.note.content">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Position:</label>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>X</label>
+                                <input ng-model="currentModel.modelProperties.position[0]">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Y</label>
+                                <input ng-model="currentModel.modelProperties.position[1]">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Z</label>
+                                <input ng-model="currentModel.modelProperties.position[2]">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Orientation:</label>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>X</label>
+                                <input ng-model="currentModel.modelProperties.orientation[0]">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Y</label>
+                                <input ng-model="currentModel.modelProperties.orientation[1]">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Z</label>
+                                <input ng-model="currentModel.modelProperties.orientation[2]">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Scale:</label>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>X</label>
+                                <input ng-model="currentModel.modelProperties.scale[0]">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Y</label>
+                                <input ng-model="currentModel.modelProperties.scale[1]">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Z</label>
+                                <input ng-model="currentModel.modelProperties.scale[2]">
+                            </md-input-container>
+                        </div>
+                    </form>
+                </div>
+            </md-content>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">
+                Cancel
+            </md-button>
+            <span flex></span>
+            <md-button ng-click="save()" class="md-raised md-primary">
+                Save
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

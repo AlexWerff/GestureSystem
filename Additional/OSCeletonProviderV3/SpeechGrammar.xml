@@ -1,0 +1,128 @@
+<grammar version="1.0" xml:lang="de-de" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>SWITCH</tag>
+        <one-of>
+          <item> Kinbaall anschalten </item>
+          <item> Kinbaall ausschalten </item>
+          <item> Kinbaall anmachen </item>
+          <item> Kinbaall ausmachen </item>
+          <item> Kinbaall schalten </item>
+          <item> Kinbaall Gerät schalten </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CANCEL</tag>
+        <one-of>
+          <item> Kinbaall abbrechen </item>
+          <item> Kinbaall Abbruch </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>HERE</tag>
+        <one-of>
+          <item> Hier </item>
+          <item> Hierhin </item>
+          <item> Das hier </item>
+          <item> Das da </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>YES</tag>
+        <one-of>
+          <item> Ja </item>
+          <item> Ja bitte </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>NO</tag>
+        <one-of>
+          <item> Nein </item>
+          <item> Nein danke </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>TOUR</tag>
+        <one-of>
+          <item> Kinbaall Tourmodus starten </item>
+          <item> Kinbaall bitte nur mich träcken </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CANCEL_TOUR</tag>
+        <one-of>
+          <item> Kinbaall Tourmodus beenden </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>DISCOVER</tag>
+        <one-of>
+          <item> Kinbaall was ist das? </item>
+          <item> Kinbaall was ist das für ein Gerät? </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>EXPLAIN</tag>
+        <one-of>
+          <item> Kinbaall ich will mehr wissen! </item>
+          <item> Kinbaall erklär mir das! </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MEMORY</tag>
+        <one-of>
+          <item> Kinbaall Mämmorie-Modus starten </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CANCEL_MEMORY</tag>
+        <one-of>
+          <item> Kinbaall Mämmorie-Modus beenden </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>VIEW_MEMORY</tag>
+        <one-of>
+          <item> Kinbaall Erinnerung anzeigen </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ADD_APPLIANCE</tag>
+        <one-of>
+          <item> Kinbaall ein neues Gerät hinzufügen </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ADD_VIRTUAL_SLIDER</tag>
+        <one-of>
+          <item> Kinbaall einen virtuellen Schieberegler hinzufügen </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ADD_VIRTUAL_BUTTON</tag>
+        <one-of>
+          <item> Kinbaall einen virtuellen Schalter hinzufügen </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ADD_MEMORY</tag>
+        <one-of>
+          <item> Kinbaall eine neue Erinnerung hinzufügen </item>
+        </one-of>
+      </item>
+    <item>
+        <tag>WHEELCHAIR_SEND</tag>
+        <one-of>
+          <item> Kinbaall Rollstuhl dahin </item>
+        </one-of>
+      </item>
+    <item>
+        <tag>WHEELCHAIR_SUMMON</tag>
+        <one-of>
+          <item> Kinbaall Rollstuhl zu mir </item>
+        </one-of>
+    </item>
+    </one-of>
+  </rule>
+</grammar>

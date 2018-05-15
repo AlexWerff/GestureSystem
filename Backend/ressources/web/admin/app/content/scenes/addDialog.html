@@ -1,0 +1,44 @@
+<md-dialog>
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add new scenes</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <i class="material-icons">close</i>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+
+            <md-content style="min-width:400px;padding:40px">
+                <div align="center">
+                    <form name="userForm" align="center">
+                        <p>Drag and Drop JSON File to upload new scenes.</p>
+                        <div ngf-drop ngf-select ng-model="file" class="drop-box" ngf-drag-over-class="'dragover'" ngf-multiple="false">
+                            {{file.name}}
+                            <p ng-show="file === undefined">No file selected.</p>
+                        </div>
+                        <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+                    </form>
+                </div>
+                <div align="center" style="margin-top:20px">
+                    <form name="userForm" align="center">
+                        <textarea class="content-area">{{fileContent}}</textarea>
+                    </form>
+                </div>
+            </md-content>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">
+                Cancel
+            </md-button>
+            <span flex></span>
+            <md-button ng-click="add()" class="md-raised md-primary">
+                Upload
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

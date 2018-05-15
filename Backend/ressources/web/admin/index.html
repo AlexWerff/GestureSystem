@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="css/angular-material.css">
+    <link href="css/material-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="js/angularjs_1.5.3.js"></script>
+    <script src="js/angularjs_1.5.3_animate.js"></script>
+    <script src="js/angularjs_1.5.3_aria-.js"></script>
+    <script src="js/angularjs_1.5.3_messages.js"></script>
+    <script src="js/angularjs_1.5.3_routes.js"></script>
+    <script src="js/angularjs_1.5.3_cookies.js"></script>
+    <script src="js/angularjs_1.5.3_sanitize.js"></script>
+    <script src="js/ng-file-upload.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="js/angularmaterial_1.10.js"></script>
+
+    <script src="app/app.controller.js"></script>
+    <script src="app/service/data.service.js"></script>
+    <script src="app/content/login/login.controller.js"></script>
+    <script src="app/content/scenes/scenes.controller.js"></script>
+    <script src="app/content/scene/scene.controller.js"></script>
+    <script src="app/content/landing/landing.controller.js"></script>
+    <script src="app/content/provider/provider.controller.js"></script>
+    <script src="app/content/consumer/consumer.controller.js"></script>
+    <script src="app/content/gestures/gestures.controller.js"></script>
+    <script src="app/content/notes/notes.controller.js"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-controller="AppCtrl" layout="column" ng-cloak>
+        <section layout="row" flex>
+            <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="5">
+                <md-toolbar class="md-theme-indigo" layout="row">
+                    <div flex="33" style="margin-top:12px;">
+                        <md-button class="md-icon-button " aria-label="Toggle" ng-click="toggleLeft()">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                        </md-button>
+                    </div>
+
+                    <h1 class="md-toolbar-tools" flex="66">Menu</h1>
+                </md-toolbar>
+                <md-content>
+                    <md-list flex>
+                        <md-list-item ng-click="selectPage('scenes')">
+                            <a href="#/scenes">
+                                <div class="md-list-item-text" layout="row">
+                                    <i class="material-icons list-logo" flex="33" style="color:#333">view_quilt</i>
+                                    <h3 flex="33">Scenes</h3>
+                                </div>
+                            </a>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item ng-click="selectPage('provider')">
+                            <a href="#/provider">
+                                <div class="md-list-item-text" layout="row">
+                                    <i class="material-icons list-logo" flex="33" style="color:#333">input</i>
+                                    <h3 flex="33">Provider</h3>
+                                </div>
+                            </a>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item ng-click="selectPage('consumer')">
+                            <a href="#/provider">
+                                <div class="md-list-item-text" layout="row">
+                                    <i class="material-icons list-logo" flex="33" style="color:#333">cloud</i>
+                                    <h3 flex="33">Consumer</h3>
+                                </div>
+                            </a>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                        <md-list-item ng-click="selectPage('gestures')">
+                            <a href="#/gestures">
+                                <div class="md-list-item-text" layout="row">
+                                    <i class="material-icons list-logo" flex="33" style="color:#333">gestures</i>
+                                    <h3 flex="33">Gestures</h3>
+                                </div>
+                            </a>
+                        </md-list-item>
+                        <md-list-item ng-click="selectPage('notes')">
+                            <a href="#/notes">
+                                <div class="md-list-item-text" layout="row">
+                                    <i class="material-icons list-logo" flex="33" style="color:#333">note</i>
+                                    <h3 flex="33">Notes</h3>
+                                </div>
+                            </a>
+                        </md-list-item>
+                        <md-divider></md-divider>
+                    </md-list>
+                </md-content>
+            </md-sidenav>
+            <md-content flex>
+                <md-toolbar class="md-theme-indigo">
+                    <div class="md-toolbar-tools">
+                        <md-button class="md-icon-button" aria-label="Toggle" ng-click="toggleLeft()">
+                            <md-icon><i class="material-icons">dehaze</i></md-icon>
+                        </md-button>
+                        <h2 flex md-truncate>Admin Panel</h2>
+                    </div>
+                </md-toolbar>
+                <ng-view></ng-view>
+            </md-content>
+        </section>
+    </div>
+</body>
+
+
+
+</html>

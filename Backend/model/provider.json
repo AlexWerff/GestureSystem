@@ -1,0 +1,15 @@
+[
+  {
+    "ProviderConfig" : {
+      "identifier" : "3d0effe9-0bae-4cf1-9b67-9311a366bf70",
+      "modelIdentifier" : "ENTER YOUR PROVIDER MODEL IDENTIFIER HERE",
+      "remoteAddress" : "ENTER YOUR BACKEND-IP HERE (TARGET FOR PROVIDER)",
+      "port" : "ENTER YOUR BACKEND-PORT HERE (7111 FOR EXAMPLE)",
+      "sceneIdentifier" : "ENTER YOUR SCENE IDENTIFIER (GUID) HERE",
+      "providerTypes" : [
+        "Speech",
+        "Skeleton"
+      ]
+    }
+  }
+]

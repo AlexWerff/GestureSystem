@@ -1,0 +1,11 @@
+[
+  {
+    "PhillipsHueConsumerConfig" : {
+      "identifier" : "2c6b6bb7-5a0d-4727-9d14-12f21724c507",
+      "name" : "Hue Home",
+      "address" : "TODO: ENTER YOUR HUE IP",
+      "port" : "TODO: ENTER YOUR HUE PORT (AS INT)",
+      "username" : "TODO: ENTER YOUR HUE USERNAME"
+    }
+  }
+]

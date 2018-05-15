@@ -1,0 +1,47 @@
+md-list-item a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+li {
+    margin-left: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-list {
+    height: 80vh;
+    padding-left: 40px;
+    padding-right: 120px;
+}
+.list-logo {
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+.drop-box {
+    background: #F8F8F8;
+    border: 5px dashed #DDD;
+    padding:20px;
+}
+.dragover {
+    border: 5px dashed #999;
+}
+
+.content-area {
+    width: 400px;
+    height: 150px;
+    background-color:#F8F8F8; 
+    border-color: #DDD;
+}

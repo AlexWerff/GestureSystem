@@ -1,0 +1,1158 @@
+{
+  "scenes": {
+    "a98a6348-40eb-4483-a0e0-50e6d0ba7c17": {
+      "models": {
+        "64dbbfa0-c6b8-4177-9d6d-5a2ad86df26b": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Queen_Bed"
+            },
+            "modelProperties": {
+              "position": [
+                -0.7599999,
+                0.024999911,
+                -0.82599926
+              ],
+              "orientation": [
+                0.0,
+                90.0,
+                0.0
+              ],
+              "scale": [
+                0.35,
+                0.35,
+                0.4
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "Queen_Bed"
+              }
+            }
+          }
+        },
+        "bc27eff1-1807-42dc-9761-664bc51f31bf": {
+          "SliderObject": {
+            "state": {
+              "on": true,
+              "value": 1
+            },
+            "modelProperties": {
+              "position": [
+                0.09,
+                0.64,
+                -1.19
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                0.4,
+                0.4,
+                1.0
+              ]
+            },
+            "models": {},
+            "controlModels": [
+              "b33e8ed6-0b94-4c95-a6f3-6895a0c48be3"
+            ],
+            "metaData": {
+              "data": {
+                "name": "Slider-Lamp",
+                "interactable": "YES"
+              }
+            }
+          }
+        },
+        "b33e8ed6-0b94-4c95-a6f3-6895a0c48be3": {
+          "StateObject": {
+            "prefab": {
+              "name": "Light"
+            },
+            "state": {
+              "on": true,
+              "value": 102
+            },
+            "modelProperties": {
+              "position": [
+                -1.42,
+                0.0,
+                -2.75
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "LightWindow",
+                "interactable": "YES"
+              }
+            }
+          }
+        },
+        "86e02088-61dc-42b8-a469-2baf070ab0a2": {
+          "StateObject": {
+            "prefab": {
+              "name": "Light"
+            },
+            "state": {
+              "on": true,
+              "value": 56
+            },
+            "modelProperties": {
+              "position": [
+                -1.4919999,
+                0.499,
+                0.13300133
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                0.6,
+                0.4,
+                0.6
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "LightDeskRight",
+                "interactable": "YES"
+              }
+            }
+          }
+        },
+        "db12c6d5-0b48-4812-beda-7f5d3bf0bba7": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Cube"
+            },
+            "modelProperties": {
+              "position": [
+                -1.4799999,
+                0.25,
+                -1.8109989
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.4
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "NightDeskWindow"
+              }
+            }
+          }
+        },
+        "3e7dc201-32b8-4cf4-867f-83bc16c16c58": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Light"
+            },
+            "modelProperties": {
+              "position": [
+                -1.476,
+                0.0,
+                0.9390011
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                0.59999996,
+                1.0,
+                0.59999996
+              ]
+            },
+            "models": {
+              "0c427fac-fa1a-44bb-bb28-d6cd44fce229": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Box001"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      -1.476,
+                      0.0,
+                      0.0
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Box001"
+                    }
+                  }
+                }
+              },
+              "13a3b606-3b7b-4ea2-9819-5e60d35f0250": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Spotlight (2)"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      -1.4417999,
+                      1.169,
+                      -0.055999994
+                    ],
+                    "orientation": [
+                      89.98022,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Spotlight (2)"
+                    }
+                  }
+                }
+              }
+            },
+            "metaData": {
+              "data": {
+                "name": "LightDoor"
+              }
+            }
+          }
+        },
+        "3d49fc33-5c81-42dc-a510-47e23ecee75b": {
+          "DefaultObject": {
+            "modelProperties": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "models": {
+              "16dd6e52-fd5c-4888-b5ba-fdd90dc81136": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Floor"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "orientation": [
+                      90.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      3.5,
+                      6.0,
+                      0.05
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Floor"
+                    }
+                  }
+                }
+              },
+              "bd258d96-7d1e-4433-b56b-2a5583b533f2": {
+                "DefaultObject": {
+                  "modelProperties": {
+                    "position": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  },
+                  "models": {
+                    "aba359e4-8fa6-4264-a742-162dc80efda7": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Wall"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            1.7250001,
+                            0.5,
+                            -0.99
+                          ],
+                          "orientation": [
+                            0.0,
+                            90.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.500001,
+                            1.0,
+                            0.050000027
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "WallDoors_1"
+                          }
+                        }
+                      }
+                    },
+                    "291c633b-ec1d-4d57-92da-337013785902": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Wall"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            1.7250001,
+                            0.5,
+                            2.01
+                          ],
+                          "orientation": [
+                            0.0,
+                            90.0,
+                            0.0
+                          ],
+                          "scale": [
+                            2.0,
+                            1.0,
+                            0.050000057
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "WallDoors_2"
+                          }
+                        }
+                      }
+                    },
+                    "57ce1b2b-176a-4108-bbc7-53da4c07d063": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Wall"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            1.731,
+                            0.5,
+                            -2.948
+                          ],
+                          "orientation": [
+                            0.0,
+                            90.0,
+                            0.0
+                          ],
+                          "scale": [
+                            0.14151086,
+                            1.0,
+                            0.050000057
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "WallDoors_3"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "metaData": {
+                    "data": {
+                      "name": "WallDoors"
+                    }
+                  }
+                }
+              },
+              "fbd73e5c-41e1-49a5-aad7-b18549d555b9": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Wall"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      -1.775,
+                      0.5,
+                      2.87
+                    ],
+                    "orientation": [
+                      0.0,
+                      90.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.3,
+                      1.0,
+                      0.050000027
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "WallDoor (1)"
+                    }
+                  }
+                }
+              },
+              "0dc7093c-22f7-4dcb-8aeb-c554d1776922": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Wall"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      0.0,
+                      0.5,
+                      -3.0
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      3.5,
+                      1.0,
+                      0.049999997
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "WallLeft"
+                    }
+                  }
+                }
+              },
+              "014ab06b-a265-4349-928d-8e684aa5a6ae": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Wall"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      0.0,
+                      0.5,
+                      3.0
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      3.5,
+                      1.0,
+                      0.049999997
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "WallRight"
+                    }
+                  }
+                }
+              },
+              "911c4ab5-ddb3-40ae-8e51-164e2f76c792": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Wall"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      -1.72,
+                      0.5,
+                      -0.91
+                    ],
+                    "orientation": [
+                      0.0,
+                      90.0,
+                      0.0
+                    ],
+                    "scale": [
+                      4.172685,
+                      1.0,
+                      0.050000027
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "WallDoor"
+                    }
+                  }
+                }
+              }
+            },
+            "metaData": {
+              "data": {
+                "name": "RoomWall"
+              }
+            }
+          }
+        },
+        "219658f6-a2dd-4365-827e-9ea0f3dbba8d": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Kinect"
+            },
+            "modelProperties": {
+              "position": [
+                0.26000014,
+                2.0,
+                2.5200014
+              ],
+              "orientation": [
+                12.256956,
+                180.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "models": {
+              "fd99e88f-642d-4397-8fa6-aa2be4dafa0f": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Cube"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      0.26000014,
+                      2.0,
+                      0.0
+                    ],
+                    "orientation": [
+                      12.256956,
+                      180.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.3,
+                      0.1,
+                      0.1
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Cube"
+                    }
+                  }
+                }
+              },
+              "7902b3df-e9db-4697-9079-7f4d39fc8c72": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Cube_direction"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      0.26000014,
+                      1.9874746,
+                      0.059
+                    ],
+                    "orientation": [
+                      12.256956,
+                      180.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.17322281,
+                      0.03,
+                      0.03
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Cube_direction"
+                    }
+                  }
+                }
+              }
+            },
+            "metaData": {
+              "data": {
+                "name": "Kinect1"
+              }
+            }
+          }
+        },
+        "208af46d-6d47-461e-8f6c-a7b3d7c4d04d": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Camera"
+            },
+            "modelProperties": {
+              "position": [
+                0.0,
+                3.0,
+                3.86
+              ],
+              "orientation": [
+                36.114,
+                180.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "Camera"
+              }
+            }
+          }
+        },
+        "16d4e4d9-66d8-4e2f-8c32-9bcaa32b2024": {
+          "DefaultObject": {
+            "modelProperties": {
+              "position": [
+                -0.099999875,
+                0.0,
+                0.60000134
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "models": {
+              "723265d9-bfc7-481a-b7b0-0e7b8e51fe99": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "BookCase_1"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      5.066395E-7,
+                      0.025000166,
+                      2.2200003
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.4,
+                      0.4547179,
+                      0.5060638
+                    ]
+                  },
+                  "models": {
+                    "313a5789-5946-4268-888c-71a3e4bfe4ab": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Cube"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            5.066395E-7,
+                            0.025000166,
+                            0.0
+                          ],
+                          "orientation": [
+                            270.01978,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            50.24983,
+                            50.24983,
+                            50.24983
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "Cube"
+                          }
+                        }
+                      }
+                    },
+                    "8e90c64a-c788-43af-9e42-f720a2bf8ce8": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Lamp"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            -1.6304977,
+                            2.7095919,
+                            -1.005454
+                          ],
+                          "orientation": [
+                            37.19464,
+                            255.46774,
+                            3.9727423
+                          ],
+                          "scale": [
+                            100.00001,
+                            100.0,
+                            100.0
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "Lamp"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "metaData": {
+                    "data": {
+                      "name": "BookCase_1"
+                    }
+                  }
+                }
+              },
+              "d0eb2c2b-866c-4eba-bfe5-fa585d469a7d": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "BookCase_1"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      0.73000014,
+                      0.025000166,
+                      2.22
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.39999998,
+                      0.45871764,
+                      0.50606
+                    ]
+                  },
+                  "models": {
+                    "1d76c8dd-91b5-45e2-a5a2-a6eabaf631b3": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Camera"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            2.62,
+                            2.16,
+                            -0.52
+                          ],
+                          "orientation": [
+                            33.491,
+                            -90.00001,
+                            0.0
+                          ],
+                          "scale": [
+                            100.0,
+                            100.0,
+                            100.0
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "Camera"
+                          }
+                        }
+                      }
+                    },
+                    "8b818e75-3b45-4819-9575-41b1f6d22b3b": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Cube"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            0.73000014,
+                            0.025000166,
+                            0.0
+                          ],
+                          "orientation": [
+                            270.01978,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            50.24983,
+                            50.24983,
+                            50.24983
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "Cube"
+                          }
+                        }
+                      }
+                    },
+                    "d0099c74-4269-40cf-955b-f24003fe272a": {
+                      "PrefabObject": {
+                        "prefab": {
+                          "name": "Lamp"
+                        },
+                        "modelProperties": {
+                          "position": [
+                            -0.9004979,
+                            2.7332058,
+                            -1.005454
+                          ],
+                          "orientation": [
+                            37.19464,
+                            255.46774,
+                            3.9727423
+                          ],
+                          "scale": [
+                            100.00001,
+                            100.0,
+                            100.0
+                          ]
+                        },
+                        "models": {},
+                        "metaData": {
+                          "data": {
+                            "name": "Lamp"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "metaData": {
+                    "data": {
+                      "name": "BookCase_1 (1)"
+                    }
+                  }
+                }
+              }
+            },
+            "metaData": {
+              "data": {
+                "name": "BookCase"
+              }
+            }
+          }
+        },
+        "4e701c37-fb76-45f6-a30d-92087713f011": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Kinect"
+            },
+            "modelProperties": {
+              "position": [
+                -0.029999822,
+                2.0,
+                -2.2799988
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "models": {
+              "1c7e6cc3-b733-4145-b031-f16366d5b5e8": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Cube"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      -0.029999822,
+                      2.0,
+                      0.0
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.3,
+                      0.1,
+                      0.1
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Cube"
+                    }
+                  }
+                }
+              },
+              "3a56484d-d0de-4fa2-b76f-861a7201e721": {
+                "PrefabObject": {
+                  "prefab": {
+                    "name": "Cube_direction"
+                  },
+                  "modelProperties": {
+                    "position": [
+                      -0.029999822,
+                      2.0,
+                      0.059
+                    ],
+                    "orientation": [
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "scale": [
+                      0.17322281,
+                      0.03,
+                      0.03
+                    ]
+                  },
+                  "models": {},
+                  "metaData": {
+                    "data": {
+                      "name": "Cube_direction"
+                    }
+                  }
+                }
+              }
+            },
+            "metaData": {
+              "data": {
+                "name": "Kinect2"
+              }
+            }
+          }
+        },
+        "aad8b93a-3c73-4616-a71a-4d6e55deb779": {
+          "PrefabObject": {
+            "prefab": {
+              "name": "Cube"
+            },
+            "modelProperties": {
+              "position": [
+                -1.42,
+                0.25,
+                0.1320014
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                0.5,
+                0.5,
+                0.4
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "NightDesk"
+              }
+            }
+          }
+        },
+        "b33e8ed6-0b94-4c95-a6f3-6895a0c48be5": {
+          "StateObject": {
+            "prefab": {
+              "name": "Button"
+            },
+            "state": {
+              "on": true,
+              "value": 100
+            },
+            "modelProperties": {
+              "position": [
+                1.58,
+                0.58,
+                1.2
+              ],
+              "orientation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                0.1779213,
+                0.32741,
+                0.3015399
+              ]
+            },
+            "models": {},
+            "metaData": {
+              "data": {
+                "name": "ButtonLightWindow",
+                "interactable": "YES"
+              }
+            }
+          }
+        }
+      },
+      "modelProperties": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "orientation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "metaData": {
+        "data": {
+          "name": "Test-Room"
+        }
+      }
+    }
+  },
+  "prefabs": [
+    {
+      "name": "Camera"
+    },
+    {
+      "name": "Couch"
+    },
+    {
+      "name": "Cube"
+    },
+    {
+      "name": "Floor"
+    },
+    {
+      "name": "Hand"
+    },
+    {
+      "name": "Head"
+    },
+    {
+      "name": "Human"
+    },
+    {
+      "name": "Joint"
+    },
+    {
+      "name": "JointConnection"
+    },
+    {
+      "name": "Kinect"
+    },
+    {
+      "name": "Light"
+    },
+    {
+      "name": "Note"
+    },
+    {
+      "name": "ProviderEntry"
+    },
+    {
+      "name": "Queen_Bed"
+    },
+    {
+      "name": "Slider"
+    },
+    {
+      "name": "TV"
+    },
+    {
+      "name": "Table"
+    },
+    {
+      "name": "Terrain"
+    },
+    {
+      "name": "Wall"
+    }
+  ]
+}

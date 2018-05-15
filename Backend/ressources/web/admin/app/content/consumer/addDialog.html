@@ -1,0 +1,99 @@
+<md-dialog aria-label="Edit Provider">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>
+                    Add new consumer
+                </h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <i class="material-icons">close</i>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <md-content style="min-width:500px;min-height:600px">
+                <md-tabs md-dynamic-height md-border-bottom md-selected="selectedIndex">
+                    <md-tab label="Select Type">
+                        <md-content class="md-padding">
+                            <h2 class="md-display-2" align="left">Select Type</h2>
+                            <md-radio-group ng-model="currentConsumer.type" ng-change>
+                                <md-radio-button ng-value="t.type" class="md-primary" ng-repeat="t in types">
+                                    {{t.name}}
+                                </md-radio-button>
+                            </md-radio-group>
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Information">
+                        <md-content class="md-padding">
+                            <h1 class="md-display-2">Information</h1>
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Name</label>
+                                    <input ng-model="currentConsumer.name">
+                                </md-input-container>
+                            </div>
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>IP-Address</label>
+                                    <input ng-model="currentConsumer.address">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm ng-show="currentConsumer.type ==='PhillipsHueConsumerConfig'">
+                                    <label>Benutzername</label>
+                                    <input ng-model="currentConsumer.username">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm ng-show="currentConsumer.type !=='PhillipsHueConsumerConfig'">
+                                    <label>Port</label>
+                                    <input ng-model="currentConsumer.port">
+                                </md-input-container>
+                            </div>
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Overview">
+                        <md-content class="md-padding">
+                            <h1 class="md-display-2">Overview</h1>
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Name</label>
+                                    <input ng-model="currentConsumer.name" disabled="true">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Type</label>
+                                    <input ng-model="currentConsumer.type" disabled="true">
+                                </md-input-container>
+                            </div>
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>IP-Address</label>
+                                    <input ng-model="currentConsumer.address" disabled="true">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm ng-show="currentConsumer.type ==='PhillipsHueConsumerConfig'">
+                                    <label>Benutzername</label>
+                                    <input ng-model="currentConsumer.username" disabled="true">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm ng-show="currentConsumer.type !=='PhillipsHueConsumerConfig'">
+                                    <label>Port</label>
+                                    <input ng-model="currentConsumer.port" disabled="true">
+                                </md-input-container>
+                            </div>
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+            </md-content>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">
+                Cancel
+            </md-button>
+            <span flex></span>
+            <md-button ng-click="next()" class="md-raised md-primary" ng-show="selectedIndex !== 2">
+                Next
+            </md-button>
+            <md-button ng-click="save()" class="md-raised md-primary" ng-show="selectedIndex === 2" ng-disabled="saveDisabled()">
+                Add
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

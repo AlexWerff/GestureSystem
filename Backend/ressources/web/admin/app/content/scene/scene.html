@@ -1,0 +1,89 @@
+<md-content align="center" layout="row">
+    <div flex="33">
+    </div>
+    <div flex="33">
+        <h1 algin="center">{{scene.metaData.data.name}}</h1>
+    </div>
+    <div flex="33" style="padding-left:100px;padding-top:30px">
+        <!--md-button class="md-fab md-primary md-mini" ng-click="editModelClick(scene,$event)">
+            <i class="material-icons">edit</i>
+        </md-button>
+        <md-button class="md-fab md-primary md-mini" ng-click="addSubModelClick(scene,$event)">
+            <i class="material-icons">add</i>
+        </md-button-->
+    </div>
+</md-content>
+
+
+<script type="text/ng-template" id="modelsTree">
+    <md-card>
+        <md-card-title>
+            <md-card-title-text>
+                <div layout="row">
+                    <div flex="10"style="padding-top:5px;padding-right:20px">
+                        <i class="material-icons" style="font-size: 48px;color:#999">
+                            <i class="material-icons">{{getModelIcon(model)}}</i>
+                        </i>
+                    </div>
+                    <div flex="90">
+
+                        <span class="md-headline">{{model.metaData.data.name}}</span>
+                        <br>
+                        <span class="md-subhead">
+                            {{model.models.length}} Models
+                        </span>
+                        <br>
+                        <span class="md-subhead">
+                            {{getNotes(model).length}} Notes
+                        </span>
+
+                    </div>
+                </div>
+            </md-card-title-text>
+
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+            <div flex="10"></div>
+            <div flex="20" align="left" style="padding-left:20px;padding-bottom:20px">
+                <md-button ng-click="expandModelClick(model)" ng-show="model.models.length > 0" class="md-fab md-primary md-mini">
+                    <i class="material-icons">{{model.expanded ? "expand_less" :"expand_more"}}</i>
+                </md-button>
+            </div>
+            <div flex="70" align="right" style="padding-right:20px;padding-bottom:20px">
+                <div ng-show="model.optionsExpanded" style="margin-right:12px;display:inline-block">
+                    <md-button class="md-fab md-primary md-mini" ng-click="editModelClick(model,$event)">
+                        <i class="material-icons">edit</i>
+                    </md-button>
+                    <md-button class="md-fab md-primary md-mini" ng-click="addSubModelClick(model,$event)">
+                        <i class="material-icons">add</i>
+                    </md-button>
+                    <md-button class="md-fab md-warn md-mini" ng-click="deleteModelClick(model,$event)">
+                        <i class="material-icons">delete</i>
+                    </md-button>
+                </div>
+                <md-button class="md-fab md-mini" ng-click="model.optionsExpanded = !model.optionsExpanded">
+                    <i class="material-icons">{{model.optionsExpanded ? "close" :"dehaze"}}</i>
+                </md-button>
+            </div>
+        </md-card-actions>
+        <md-card-content ng-show="model.expanded">
+            <ul ng-if="model.models">
+                <li ng-repeat="model in model.models" ng-include="'modelsTree'">
+                </li>
+            </ul>
+    </md-card>
+</script>
+<md-content>
+    <md-button class="md-fab md-fab-bottom-right md-primary" ng-click="editModelClick(scene,$event)" style="bottom:90px">
+        <i class="material-icons">edit</i>
+    </md-button>
+    <md-button class="md-fab md-fab-bottom-right md-primary" ng-click="addSubModelClick($event)">
+        <i class="material-icons">add</i>
+    </md-button>
+
+    <md-content class="content-list">
+        <ul>
+            <li ng-repeat="model in scene.models" ng-include="'modelsTree'"></li>
+        </ul>
+    </md-content>
+</md-content>

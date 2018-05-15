@@ -1,0 +1,41 @@
+<md-content align="center">
+    <h1>
+        <i class="material-icons list-logo" style="color:#333">cloud</i>Consumer
+    </h1>
+</md-content>
+
+<md-content>
+    <md-button class="md-fab md-fab-bottom-right md-primary" ng-click="addConsumerClick($event)">
+        <i class="material-icons">add</i>
+    </md-button>
+    <md-content class="content-list">
+        <md-card ng-repeat="con in consumer">
+            <md-card-title>
+                <md-card-title-text>
+                    <div layout="row">
+                        <div flex="15" align="center" style="padding-top:20px;padding-right:20px">
+                            <img src="{{con.logoUrl}}" width="100px" height="auto"></img>
+                        </div>
+                        <div flex="85">
+                            <span class="md-headline">
+                                {{con.name}}
+                            </span>
+                            <br>
+                            <span class="md-subhead">
+                                Address: {{con.address}}:{{con.port}}
+                            </span>
+                        </div>
+                    </div>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center" style="margin-top:-40px">
+                <!--md-button class="md-fab md-primary md-mini" ng-click="editConsumerClick(con,$event)">
+                    <i class="material-icons">edit</i>
+                </md-button-->
+                <md-button class="md-fab md-warn md-mini" ng-click="deleteConsumerClick(con,$event)">
+                    <i class="material-icons">delete</i>
+                </md-button>
+            </md-card-actions>
+        </md-card>
+    </md-content>
+</md-content>

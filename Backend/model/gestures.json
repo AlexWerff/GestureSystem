@@ -1,0 +1,11 @@
+[
+  {
+    "PointingAtGesture": {"active":true,"name":"Show"}
+  },
+  {
+    "SliderUseGesture": {"active":true,"name":"Slider"}
+  },
+  {
+    "TouchGesture": {"active":true,"name":"Touch"}
+  }
+]

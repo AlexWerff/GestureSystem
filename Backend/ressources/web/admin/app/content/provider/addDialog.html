@@ -1,0 +1,70 @@
+<md-dialog aria-label="Edit Provider">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>
+                    Add new provider
+                </h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <i class="material-icons">close</i>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+
+            <md-content layout-padding style="width:600px;">
+                <div>
+                    <form name="userForm">
+                        <div layout-gt-sm="row">
+                            <p flex="100">Type</p>
+                            <md-checkbox ng-checked="exists(type)" ng-click="toggle(type)" ng-repeat="type in types" flex="100">
+                                {{ type.name }}
+                            </md-checkbox>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Scene</label>
+                                <md-select ng-model="currentProvider.scene" ng-change="sceneChanged()">
+                                    <md-option ng-repeat="scene in scenes" ng-value="scene">
+                                        {{scene.metaData.data.name}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Model</label>
+                                <md-select ng-model="currentProvider.model">
+                                    <md-option ng-repeat="model in models" ng-value="model">
+                                        {{model.metaData.data.name}}
+                                    </md-option>
+                                </md-select>
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>IP-Address</label>
+                                <input ng-model="currentProvider.remoteAddress">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Port</label>
+                                <input ng-model="currentProvider.port">
+                            </md-input-container>
+                        </div>
+
+                    </form>
+                </div>
+            </md-content>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()">
+                Cancel
+            </md-button>
+            <span flex></span>
+            <md-button ng-click="save()" class="md-raised md-primary">
+                Save
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

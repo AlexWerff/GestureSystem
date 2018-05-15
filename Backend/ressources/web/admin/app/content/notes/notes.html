@@ -1,0 +1,42 @@
+<md-content align="center">
+    <h1>
+        <i class="material-icons list-logo" style="color:#333;margin-top:5px">note</i>Notes
+    </h1>
+</md-content>
+<md-content>
+    <md-button class="md-fab md-fab-bottom-right md-primary" ng-click="addNoteClick($event)">
+        <i class="material-icons">add</i>
+    </md-button>
+    <md-content class="content-list">
+        <md-card ng-repeat="note in noteModels">
+            <md-card-title>
+                <md-card-title-text>
+                    <div layout="row">
+                        <div flex="10" align="center" style="padding-top:5px;padding-right:20px">
+                            <i class="material-icons" style="font-size: 48px;color:#999">
+                                note
+                            </i>
+                        </div>
+                        <div flex="80" style="padding-top:0px">
+                            <span class="md-headline">
+                                {{note.note.name}} (note.name)
+                            </span>
+                            <br>
+                            <span class="md-subhead">
+                                {{note.note.content}}
+                            </span>
+                        </div>
+                    </div>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row" layout-align="end center" style="margin-top:-40px">
+                <md-button class="md-fab md-primary md-mini" ng-click="editNoteClick(note,$event)">
+                    <i class="material-icons">edit</i>
+                </md-button>
+                <md-button class="md-fab md-warn md-mini" ng-click="deleteNoteClick(note,$event)">
+                    <i class="material-icons">delete</i>
+                </md-button>
+            </md-card-actions>
+        </md-card>
+    </md-content>
+</md-content>

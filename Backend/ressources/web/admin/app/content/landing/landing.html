@@ -1,0 +1,47 @@
+<md-content align="center">
+    <h1 algin="center">Welcome</h1>
+
+</md-content>
+<md-content class="content-list">
+    <h3>Info</h3>
+    <md-card>
+        <md-card-title>
+            <md-card-title-text>
+                <div layout="row">
+                    <div flex="50" align="left">
+                        <span class="md-headline">
+                                Event-Socket:
+                            </span>
+                        <br>
+                    </div>
+                    <div flex="50" align="left">
+                        <span class="md-headline" style="color:#999">
+                                {{info.eventSocketAddress}}
+                            </span>
+                        <br>
+                    </div>
+                </div>
+            </md-card-title-text>
+        </md-card-title>
+    </md-card>
+    <md-card>
+        <md-card-title>
+            <md-card-title-text>
+                <div layout="row">
+                    <div flex="50" align="left">
+                        <span class="md-headline">
+                                Skeleton-Socket:
+                            </span>
+                        <br>
+                    </div>
+                    <div flex="50" align="left">
+                        <span class="md-headline" style="color:#999">
+                                {{info.skeletonSocketAddress}}
+                            </span>
+                        <br>
+                    </div>
+                </div>
+            </md-card-title-text>
+        </md-card-title>
+    </md-card>
+</md-content>
