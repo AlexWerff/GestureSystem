@@ -56,6 +56,10 @@ To check if any Gestures are recognized simply connect to:
 This should show all Events coming up in the System.
 So thats if guys so this was a short setup guide to get your gesture system ready.
 
+
+# Additional Links
+ - OSCeleton: https://github.com/Zillode/OSCeleton-KinectSDK2
+
 # More Comments
 So please keep in mind that this is not a final product and still far away from beeing it. The code my be bad here and there(or maybe in your opinion everywhere). The Backend Code is written in Scala and designed to be as functional as possible (Actors are not really functional or even pure).
 If you don't have any experience with functional programming or akka please visit the akka webpage and try to learn Scala (its an amazing language and my favourite by far).
